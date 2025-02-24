@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "673de7f3-55d8-4a0d-9761-d553dc39aa2c",
+		"name": "adres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "910811"
+	},
+	"item": [
+		{
+			"name": "proveedores",
+			"item": [
+				{
+					"name": "obtener-proveedores",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/proveedores",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"proveedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar-proveedor",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Laboratorios Bayer S.A.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/proveedores",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"proveedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener-proveedor",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/proveedores/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"proveedores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar-proveedor",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Laboratorios Bayer\",\n    \"activo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/proveedores/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"proveedores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar-proveedor",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/proveedores/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"proveedores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "adquisiciones",
+			"item": [
+				{
+					"name": "obtener-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/adquisiciones",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"adquisiciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presupuesto\": \"15000000\",\n    \"unidadAdministrativaId\": 1,\n    \"tipoBienServicioId\": 1,\n    \"cantidad\": 5,\n    \"valorUnitario\": 7000,\n    \"fechaAdquisicion\": \"2024-02-23T12:00:00\",\n    \"proveedorId\": 1,\n    \"documentacion\": \"Orden de compra\",\n    \"activo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/adquisiciones",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"adquisiciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/adquisiciones/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"adquisiciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"presupuesto\": \"15000000\",\n    \"unidadAdministrativaId\": 1,\n    \"tipoBienServicioId\": 1,\n    \"cantidad\": 5,\n    \"valorUnitario\": 7000,\n    \"fechaAdquisicion\": \"2024-02-23T12:00:00\",\n    \"proveedorId\": 1,\n    \"documentacion\": \"Orden de compra 1\",\n    \"activo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/adquisiciones/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"adquisiciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/adquisiciones/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"adquisiciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "historial-adquisiciones",
+			"item": [
+				{
+					"name": "obtener-historial-adquisiciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/historial-adquisiciones/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"historial-adquisiciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "unidad-administrativa",
+			"item": [
+				{
+					"name": "obtener-unidad",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/unidadesadministrativas",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"unidadesadministrativas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar-unidad",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Dirección de Medicamentos y Tecnologías en Salud\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/unidadesadministrativas",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"unidadesadministrativas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener-unidad",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/unidadesadministrativas/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"unidadesadministrativas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar-unidad",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nombre\": \"Dirección de Medicamentos y Tecnologías en Salud de prueba\",\n    \"activo\": true\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/unidadesadministrativas/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"unidadesadministrativas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar-unidad",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/unidadesadministrativas/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"unidadesadministrativas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tipo_bien_servicio",
+			"item": [
+				{
+					"name": "obtener-tipos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/tiposbienes",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"tiposbienes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar-tipo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descripcion\": \"Medicamentos\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/tiposbienes",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"tiposbienes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener-tipo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/tiposbienes/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"tiposbienes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar-tipo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"descripcion\": \"Medicamentos de prueba\",\n    \"activo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/api/tiposbienes/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"tiposbienes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar-tipo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/tiposbienes/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"tiposbienes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
